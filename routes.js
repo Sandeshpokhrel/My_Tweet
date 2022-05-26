@@ -10,7 +10,7 @@ const Content = (req,res) =>{
     }
     else if(url =='/'){
         res.setHeader('Content-Type','text/html');
-        res.write('hello world!');
+        res.write('<h1>Hello world!</h2>');
         return res.end();
     }
     else if(url == '/settings' && method == "POST"){
